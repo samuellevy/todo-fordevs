@@ -1,0 +1,23 @@
+{
+  "name": "todo-fordevs",
+  "version": "1.0.0",
+  "description": "A simple todo app for devs.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuellevy/todo-fordevs.git"
+  },
+  "author": "Samuel Levy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuellevy/todo-fordevs/issues"
+  },
+  "homepage": "https://github.com/samuellevy/todo-fordevs#readme",
+  "devDependencies": {
+    "electron": "^5.0.0"
+  }
+}
