@@ -1,11 +1,16 @@
 {
   "name": "todo-fordevs",
+  "homepage": "http://localhost:5000/",
   "version": "1.0.0",
   "description": "A simple todo app for devs.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "server": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "go": "concurrently --kill-others \"serve -s build\" \"electron .\""
   },
   "repository": {
     "type": "git",
@@ -16,9 +21,27 @@
   "bugs": {
     "url": "https://github.com/samuellevy/todo-fordevs/issues"
   },
-  "homepage": "https://github.com/samuellevy/todo-fordevs#readme",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "electron": "^5.0.0",
-    "electron-reload": "^1.4.0"
+    "electron-reload": "^1.4.0",
+    "serve": "^11.0.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 firefox version",
+      "last 1 chrome version",
+      "last 1 safari version"
+    ]
   }
 }

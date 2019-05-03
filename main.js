@@ -22,7 +22,8 @@ const options = {
 
 app.on('ready', function () {
     let win = new BrowserWindow({width: 360, height: 700, x: 0, y: 0});
-    win.loadFile('index.html');
+    // win.loadFile('index.html');
+    win.loadURL('http://localhost:5000/')
     const menuTemplate = [
         {
             label: 'File',
