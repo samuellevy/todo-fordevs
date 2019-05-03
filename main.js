@@ -1,5 +1,9 @@
 const electron = require('electron');
 const { dialog } = require('electron');
+
+// Enable live reload for all the files inside your project directory
+require('electron-reload')(__dirname);
+
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const Menu = electron.Menu;
@@ -24,7 +28,7 @@ app.on('ready', function () {
             label: 'File',
             submenu: [
                 {
-                    label: 'About',
+                    label: 'Sobre',
                     click: () => {
                         dialog.showMessageBox(null, options, (response, checkboxChecked) => {
                             console.log(response);

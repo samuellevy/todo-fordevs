@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../fonts/SourceSansPro-Regular.ttf')/*Para navegadores Internet Explorer*/;
+    font-weight: normal;
+    font-style: normal;
+}
