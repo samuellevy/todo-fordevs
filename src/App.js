@@ -10,18 +10,24 @@ import { faFile,faFolder,faPen,faTrash,faCloud } from '@fortawesome/free-solid-s
 import ItemBox from './components/ItemBox';
 
 library.add(faFile,faFolder,faPen,faTrash,faCloud);
+function hide(){
+  alert('tst');
+}
 
 function App() {
   return (
     <div className="App">
       <aside>
-        <li><FontAwesomeIcon icon="file" className="icon" size="2x"/></li>
+        <li onClick={()=>{hide()}}><FontAwesomeIcon icon="file" className="icon" size="2x"/></li>
         <li><FontAwesomeIcon icon="folder" className="icon" size="2x"/></li>
         <li><FontAwesomeIcon icon="pen" className="icon" size="2x"/></li>
         <li><FontAwesomeIcon icon="trash" className="icon" size="2x"/></li>
         <li><FontAwesomeIcon icon="cloud" className="icon" size="2x"/></li>
       </aside>
       <section>
+        <ItemBox/>
+        <ItemBox/>
+        <ItemBox/>
         <ItemBox/>
         <ItemBox/>
         <ItemBox/>
