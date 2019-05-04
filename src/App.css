@@ -1,5 +1,8 @@
 .App {
   text-align:left;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 *{margin: 0; padding: 0;box-sizing: border-box;}
@@ -7,11 +10,24 @@ body{
     background-color: #282a36;
     font-family: 'SourceSansPro-Regular', sans-serif;
 }
+aside{
+    width: 70px;
+    background-color: #44475a;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+aside li{
+  list-style: none;
+  margin: 25px 0;
+}
+
+aside li .icon{
+  color: #ffffff;
+}
 
 section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 100%;
 }
 
 article{
