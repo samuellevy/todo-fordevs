@@ -11,7 +11,7 @@ import ItemBox from './components/ItemBox';
 
 library.add(faFile,faFolder,faPen,faTrash,faCloud);
 function hide(){
-  alert('tst');
+  console.log('clicked');
 }
 
 function App() {
