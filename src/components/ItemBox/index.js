@@ -1,22 +1,34 @@
 import React from 'react';
 import './index.scss';
 
-function ItemBox() {
+function formatDate(date){
+  if(date){
+    var realDate = JSON.parse('"'+date+'"');
+    var finaldate = new Date(realDate);
+    console.log(finaldate.toUTCString().substr(0,17));
+    return finaldate.toUTCString().substr(0,17);
+  }else{
+    return "";
+  }  
+}
+
+function ItemBox(props) {
   return (
     <article>
         <div className='header'>
-            <h1>Concluir tarefa do Electron</h1>
-            <span className='tag'>electron</span>
-            <span className='tag'>php</span>
-            <span className='tag'>js</span>
-            <span className='tag'>react</span>
+            <h1>{props.data.name}</h1>
+            {
+              props.data.labels.map((item,i)=>
+                <span className='tag' key={i}>{item.name}</span>
+              )
+            }
         </div>
         <div className="content">
-            <p>buscar dados suficientes para enrolar qualquer texto aqui.</p>
+            <p>{props.data.name}</p>
         </div>
         <div className="footer">
-            <div>13 de abril</div>
-            <div>05 de maio</div>
+            <div>{formatDate(props.data.dateLastActivity)}</div>
+            <div>{formatDate(props.data.due)}</div>
         </div>
     </article>
   );

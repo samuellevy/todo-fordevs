@@ -3,6 +3,7 @@ article{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     min-height: 94px;
@@ -62,7 +63,6 @@ article{
         flex-direction: row;
         flex-wrap: nowrap;
         div{
-            display: inline-block;
             color: #8be9fd;
             font-family: 'SourceSansPro-Regular', sans-serif;
             font-size: 12px;
@@ -71,6 +71,10 @@ article{
             margin: 3px;
             width: 50%;
             text-align: center;
+            min-height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }
