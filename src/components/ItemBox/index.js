@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 
 function ItemBox() {
   return (
@@ -17,7 +18,6 @@ function ItemBox() {
             <div>13 de abril</div>
             <div>05 de maio</div>
         </div>
-
     </article>
   );
 }
