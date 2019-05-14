@@ -10,6 +10,7 @@ import ItemBox from './components/ItemBox';
 import BlockItems from './components/BlockItems';
 
 library.add(faFile,faFolder,faPen,faTrash,faCloud);
+require('dotenv').config();
 
 function App() {
   return (

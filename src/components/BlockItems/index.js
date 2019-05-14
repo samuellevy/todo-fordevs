@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import ItemBox from '../ItemBox';
+import SwipeToDelete from 'react-swipe-to-delete-component';
 
 class BlockItems extends Component{
     // default State object
@@ -43,7 +44,9 @@ class BlockItems extends Component{
             <div>
                 {
                     this.state.contacts.map((item,i) =>
-                        <ItemBox data={item} key={i}/>
+                        <SwipeToDelete key={i} background={false}>
+                            <ItemBox data={item} />
+                        </SwipeToDelete>
                     )
                 }
             </div>
