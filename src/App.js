@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
@@ -6,13 +6,19 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile,faFolder,faPen,faTrash,faCloud } from '@fortawesome/free-solid-svg-icons'
 
-import ItemBox from './components/ItemBox';
 import BlockItems from './components/BlockItems';
 
 library.add(faFile,faFolder,faPen,faTrash,faCloud);
-require('dotenv').config();
+
+function ComponentDidMount() {
+  useEffect(() => {
+    
+  }, []);
+  return null;
+}
 
 function App() {
+  ComponentDidMount();
   return (
     <div className="App">
       <aside>

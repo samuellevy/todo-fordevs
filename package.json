@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "server": "react-scripts start",
+    "server": "env-cmd react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -33,7 +33,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "dotenv": "^8.0.0",
+    "env-cmd": "^9.0.1",
     "i": "^0.3.6",
     "node-sass": "^4.12.0",
     "npm": "^6.9.0",
